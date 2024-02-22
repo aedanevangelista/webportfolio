@@ -55,9 +55,9 @@ const About = () => {
                     <div className={timelineIcon}><FaGamepad /></div>
                 </div>
                 
-                <div className="col-span-4 w-full h-full flex items-center text-white sm:text-lg tracking-tighter">Nov 2020 - Oct 2022</div>
+                <div className="col-span-4 w-full h-full flex items-center text-white sm:text-lg text-sm tracking-tighter">Nov 2020 - Oct 2022</div>
 
-                <div className="col-span-4 w-full h-full flex justify-end items-center text-white sm:text-lg tracking-tighter">April 2021 - Oct 2021</div>
+                <div className="col-span-4 w-full h-full flex justify-end items-center text-white text-sm sm:text-lg tracking-tighter">April 2021 - Oct 2021</div>
                 
                 <div className=" col-span-1 w-full h-full flex justify-center items-center">
                     <div className="h-full w-0.5 bg-sky-500"></div>
@@ -83,9 +83,9 @@ const About = () => {
                     <div className="h-full w-0.5 bg-sky-500"></div>
                     <div className={timelineIcon}><BiSupport /></div>
                 </div>
-                <div className="col-span-4 w-full h-full flex items-center text-white sm:text-lg tracking-tighter">Oct 2022 - June 2023</div>
+                <div className="col-span-4 w-full h-full flex items-center text-white text-sm sm:text-lg tracking-tighter">Oct 2022 - June 2023</div>
 
-                <div className="col-span-4 w-full h-full flex justify-end items-center text-white sm:text-lg tracking-tighter">Aug 2023 - Oct 2023</div>
+                <div className="col-span-4 w-full h-full flex justify-end items-center text-white text-sm sm:text-lg tracking-tighter">Aug 2023 - Oct 2023</div>
                 <div className=" col-span-1 w-full h-full flex justify-center items-center">
                     <div className="h-full w-0.5 bg-sky-500"></div>
                     <div className={timelineIcon}><FaClipboardCheck /></div>
@@ -109,7 +109,7 @@ const About = () => {
                     <div className="h-full w-0.5 bg-sky-500"></div>
                     <div className={timelineIcon}><BiSupport /></div>
                 </div>
-                <div className="col-span-4 w-full h-full flex items-center text-white sm:text-lg tracking-tighter">Oct 2023 - June 2023</div>
+                <div className="col-span-4 w-full h-full flex items-center text-white text-sm sm:text-lg tracking-tighter">Oct 2023 - June 2023</div>
 
             </div>     
             <VscTriangleDown className='text-sky-500 '/>    
