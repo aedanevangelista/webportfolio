@@ -15,7 +15,7 @@ const About = () => {
     let timelineP = "text-gray-100 py-2 sm:text-sm text-xs font-semibold";
     
   return (
-    <div name='about' className='w-full h-[300vh] md:h-[160vh] m-h-[800vh] bg-slate-900/[99%] text-gray-400'>
+    <div name='about' className='w-full h-[2200px] md:h-[3000px] bg-slate-900/[99%] text-gray-400'>
         <div className='flex flex-col justify-center items-center w-full h-full'>
 
                 <div className='sm:text-right pb-8 sm:mt-24'>
