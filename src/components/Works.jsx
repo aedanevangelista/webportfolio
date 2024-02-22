@@ -5,10 +5,10 @@ import todolist from '../assets/projects/todolist.png'
 
 const Works = () => {
   return (
-    <div name='work' className='w-full md:h-screen bg-slate-900/[99%] text-gray-300 py-32 px-12 sm:px-0 sm:py-0'>
+    <div name='work' className='w-full md:h-screen bg-slate-900/[99%] text-gray-300 py-32 sm:px-0 sm:py-0'>
       <div className='max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full'>
         <div className='mb-8 '>
-          <p className='text-4xl text-white text-center font-bold inline border-b-4 border-sky-400'>Work</p>
+          <p className='text-4xl text-white w-full font-bold inline border-b-4 border-sky-400'>Work</p>
           <p className='my-6'>// Check out some of my recent work</p>
         </div>
 
