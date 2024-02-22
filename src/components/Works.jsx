@@ -17,7 +17,7 @@ const Works = () => {
             {/* Grid Item */}
 
             <div className='shadow-lg shadow-[#040c16] container flex flex-col justify-center items-center mx-auto content-div overflow-hidden group'>
-              <img src={todolist} alt="todolist" className='h-[350px] w-full object-cover group-hover:scale-105 transition-transform duration-300'/>
+              <img src={todolist} alt="todolist" className='h-[400px] w-full object-cover group-hover:scale-105 transition-transform duration-300'/>
               
               {/* Hover Effect */}
               <div className='duration-300 transition-all my-4 bg-slate-900 py-2 w-full flex flex-col justify-center items-center z-10'>
