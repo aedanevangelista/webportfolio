@@ -27,10 +27,10 @@ const Works = () => {
                 </span>
                 
                 <div className='pt-4 text-center '>
-                  <a href="/">
+                  <a href="https://aedanevangelista-todolist.netlify.app/">
                     <button className='text-center rounded-lg px-4 py-2 m-2 bg-sky-400 text-white font-bold text-lg hover:bg-sky-500 transition-all duration-400'>Demo</button>
                   </a>
-                  <a href="/">
+                  <a href="https://github.com/aedanevangelista/TodoList">
                     <button className='text-center rounded-lg px-4 py-2 m-2 bg-sky-400 text-white font-bold text-lg hover:bg-sky-500 transition-all duration-400'>Code</button>
                   </a>
                 </div>
