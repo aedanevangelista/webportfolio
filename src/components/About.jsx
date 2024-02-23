@@ -15,10 +15,10 @@ const About = () => {
     let timelineP = "text-gray-100 py-2 sm:text-sm text-xs font-semibold";
     
   return (
-    <div name='about' className='w-full h-[2200px] md:h-[1500px] bg-slate-900/[99%] text-gray-400'>
+    <div name='about' className='w-full h-full py-20 bg-slate-900/[99%] text-gray-400'>
         <div className='flex flex-col justify-center items-center w-full h-full'>
 
-                <div className='sm:text-right pb-8 sm:mt-24'>
+                <div className='sm:text-right pb-8'>
                   <p className='text-4xl font-bold inline border-b-4 border-sky-400 text-white'>About</p>
                 </div>
 
@@ -39,11 +39,12 @@ const About = () => {
             <div className='flex justify-center flex-col '>
             {/* Timeline */}
 
-            <div className='flex flex-col justify-center items-center'>
-            <VscTriangleUp className='text-sky-500 '/>    
+            <div className='flex flex-col justify-center items-center'>  
             <div className="max-w-[900px] mx-auto w-full grid grid-cols-9 px-4 sm:px-2 tracking-tight">
                 
-                <div className={timelineContainer}>
+                {/* 1ST COL */}
+
+                <div className='hidden md:block col-span-4 w-full h-full'>
                     <div className={timelineCardContainer}>
                         <h1 className={timelineH1}>GAME DEVELOPER & DESIGNER</h1>
                         <h2 className={timelineH2}>Skydev Solutions Inc.</h2>
@@ -55,15 +56,27 @@ const About = () => {
                     <div className={timelineIcon}><FaGamepad /></div>
                 </div>
                 
-                <div className="col-span-4 w-full h-full flex items-center text-white sm:text-lg text-sm tracking-tighter">Nov 2020 - Oct 2022</div>
+                <div className="hidden col-span-4 w-full h-full sm:flex items-center text-white sm:text-lg text-sm tracking-tighter">Nov 2020 - Oct 2022</div>
 
-                <div className="col-span-4 w-full h-full flex justify-end items-center text-white text-sm sm:text-lg tracking-tighter">April 2021 - Oct 2021</div>
+                <div className='block sm:hidden col-span-8 w-full h-full'>
+                    <div className={timelineCardContainer}>
+                        <h1 className={timelineH1}>GAME DEVELOPER & DESIGNER</h1>
+                        <h2 className={timelineH2}>Skydev Solutions Inc.</h2>
+                        <p className={timelineP}>My first job as a developer creating games with the Roblox Platform that is fun for all ages.</p>
+                    </div>
+                </div>
+
+                {/* 2ND COL */}
+
+                
+                <div className="hidden col-span-4 w-full h-full sm:flex justify-end items-center text-white text-sm sm:text-lg tracking-tighter">April 2021 - Oct 2021</div>
                 
                 <div className=" col-span-1 w-full h-full flex justify-center items-center">
                     <div className="h-full w-0.5 bg-sky-500"></div>
                     <div className={timelineIcon}><FaLaptop /></div>
                 </div>
-                <div className="col-span-4 w-full h-full ">
+
+                <div className="col-span-8 sm:col-span-4 w-full h-full py-4">
                     <div class={timelineCardContainer}>
                         <h1 class={timelineH1}>FREELANCE DEVELOPER</h1>
                         <h2 className={timelineH2}>Ottodot Inc.</h2>
@@ -72,25 +85,40 @@ const About = () => {
                 </div>
 
 
-                <div className="col-span-4 w-full h-full ">
+                {/* 3RD COL */}
+
+
+                <div className="hidden sm:block col-span-4 w-full h-full">
                     <div className={timelineCardContainer}>
                         <h1 className={timelineH1}>TECHNICAL SUPPORT</h1>
                         <h2 className={timelineH2}>VXI Global Solutions, LLC</h2>
                         <p className={timelineP}>Life went downwards as I fell into depression. Managed to pick myself up again and tried to become a technical support for the meantime. Got to improve my english communication skills that I still use up to this date as a developer.</p>
                     </div>
                 </div>
+
                 <div className=" col-span-1 w-full h-full flex justify-center items-center">
                     <div className="h-full w-0.5 bg-sky-500"></div>
                     <div className={timelineIcon}><BiSupport /></div>
                 </div>
-                <div className="col-span-4 w-full h-full flex items-center text-white text-sm sm:text-lg tracking-tighter">Oct 2022 - June 2023</div>
+                <div className="hidden col-span-4 w-full h-full md:flex items-center text-white text-sm sm:text-lg tracking-tighter">Oct 2022 - June 2023</div>
 
-                <div className="col-span-4 w-full h-full flex justify-end items-center text-white text-sm sm:text-lg tracking-tighter">Aug 2023 - Oct 2023</div>
+                <div className="block md:hidden col-span-8 w-full h-full">
+                    <div className={timelineCardContainer}>
+                        <h1 className={timelineH1}>TECHNICAL SUPPORT</h1>
+                        <h2 className={timelineH2}>VXI Global Solutions, LLC</h2>
+                        <p className={timelineP}>Life went downwards as I fell into depression. Managed to pick myself up again and tried to become a technical support for the meantime. Got to improve my english communication skills that I still use up to this date as a developer.</p>
+                    </div>
+                </div>
+
+                {/* 4TH COL */}
+
+
+                <div className="hidden col-span-4 w-full h-full sm:flex justify-end items-center text-white text-sm sm:text-lg tracking-tighter">Aug 2023 - Oct 2023</div>
                 <div className=" col-span-1 w-full h-full flex justify-center items-center">
                     <div className="h-full w-0.5 bg-sky-500"></div>
                     <div className={timelineIcon}><FaClipboardCheck /></div>
                 </div>
-                <div className="col-span-4 w-full h-full ">
+                <div className="sm:col-span-4 col-span-8 w-full h-full py-4">
                     <div className={timelineCardContainer}>
                         <h1 className={timelineH1}>FREELANCE QA ENGINEER</h1>
                         <h2 className={timelineH2}>Aloautta Inc.</h2>
@@ -98,7 +126,11 @@ const About = () => {
                     </div>
                 </div>
                 
-                <div className="col-span-4 w-full h-full ">
+
+                {/* 5TH COL */}
+
+
+                <div className="hidden sm:block col-span-4 w-full h-full ">
                     <div className={timelineCardContainer}>
                     <h1 className={timelineH1}>QA ENGINEER</h1>
                         <h2 className={timelineH2}>Skydev Solutions Inc.</h2>
@@ -109,10 +141,18 @@ const About = () => {
                     <div className="h-full w-0.5 bg-sky-500"></div>
                     <div className={timelineIcon}><BiSupport /></div>
                 </div>
-                <div className="col-span-4 w-full h-full flex items-center text-white text-sm sm:text-lg tracking-tighter">Oct 2023 - June 2023</div>
-
+                <div className="hidden col-span-4 w-full h-full sm:flex items-center text-white text-sm sm:text-lg tracking-tighter">Oct 2023 - Present</div>
+                
+                <div className="block sm:hidden col-span-8 sm:col-span-4 w-full h-full ">
+                    <div className={timelineCardContainer}>
+                    <h1 className={timelineH1}>QA ENGINEER</h1>
+                        <h2 className={timelineH2}>Skydev Solutions Inc.</h2>
+                        <p className={timelineP}>Got back right on the track as a developer at my first company! But this time, I want to focus more on web development rather than game development!</p>
+                    </div>
+                </div>
+                
             </div>     
-            <VscTriangleDown className='text-sky-500 '/>    
+            
             </div>
    
 
