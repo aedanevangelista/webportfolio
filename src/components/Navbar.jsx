@@ -12,9 +12,9 @@ const Navbar = () => {
   return (
     <div className='fixed z-50 w-full h-[80px] bg-slate-950 flex justify-between items-center px-12 text-gray-300'>
         <div>
-            <h1 className='font-bold text-sky-400 text-2xl hover:scale-105 cursor-pointer transition duration-300'>
+            <h1 className='font-bold text-sky-400 text-4xl hover:scale-105 cursor-pointer transition duration-300'>
             <Link to="home" smooth={true} duration={600}>
-                {'< AEDAN />'}
+                {'<A>'}
             </Link>
             </h1>
         </div>
