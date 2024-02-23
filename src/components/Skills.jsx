@@ -106,12 +106,17 @@ const Skills = () => {
 
           <div>
             <p className="mt-8 text-2xl flex justify-center items-center mb-8">
-              <Fade duration={800} direction="down" triggerOnce="true">
+              <Fade
+                duration={800}
+                direction="down"
+                delay={200}
+                triggerOnce="true"
+              >
                 <FaLightbulb className="mx-2" size={30} />
                 <span>KNOWLEDGE</span>
               </Fade>
             </p>
-            <Fade duration={800} direction="up" triggerOnce="true">
+            <Fade duration={800} direction="up" delay={200} triggerOnce="true">
               <div className="grid grid-cols-3 gap-4 items-center shadow-md shadow-[#040c16] p-4">
                 <img src={Rblx} alt="rblx" className="w-16 h-auto" />
                 <img src={VsC} alt="VsC" className="w-14 h-auto" />

@@ -69,7 +69,7 @@ const About = () => {
             <div className="max-w-[900px] mx-auto w-full grid grid-cols-9 px-4 sm:px-2 tracking-tight">
               {/* 1ST COL */}
 
-              <div className="hidden md:block col-span-4 w-full h-full hover:scale-105 transition-all duration-500">
+              <div className="hidden sm:block col-span-4 w-full h-full hover:scale-105 transition-all duration-500">
                 <Fade direction="left" delay={200} triggerOnce="true">
                   <div className={timelineCardContainer}>
                     <h1 className={timelineH1}>GAME DEVELOPER & DESIGNER</h1>
@@ -162,13 +162,13 @@ const About = () => {
                   <BiSupport />
                 </div>
               </div>
-              <div className="hidden col-span-4 w-full h-full md:flex items-center text-white text-sm sm:text-lg tracking-tighter">
+              <div className="hidden col-span-4 w-full h-full sm:flex items-center text-white text-sm sm:text-lg tracking-tighter">
                 <Fade direction="right" delay={300} triggerOnce="true">
                   Oct 2022 - June 2023
                 </Fade>
               </div>
 
-              <div className="block md:hidden col-span-8 w-full h-full">
+              <div className="block sm:hidden col-span-8 w-full h-full">
                 <Fade direction="right" delay={300} triggerOnce="true">
                   <div className={timelineCardContainer}>
                     <h1 className={timelineH1}>TECHNICAL SUPPORT</h1>
