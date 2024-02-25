@@ -22,7 +22,7 @@ const Skills = () => {
   return (
     <div
       name="skill"
-      className="w-full h-[150vh] sm:h-screen bg-slate-900 text-white"
+      className="w-full h-full sm:min-h-screen bg-slate-900 text-white py-32"
     >
       {/* Container */}
 
@@ -42,19 +42,19 @@ const Skills = () => {
         </p>
         <div className="w-full grid grid-cols-2 sm:grid-cols-3 gap-8 text-center my-8 text-white">
           <Fade duration={800} delay={100} triggerOnce="true">
-            <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500 mt-2">
+            <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500 mt-2 py-4">
               <img className="w-24 mx-auto" src={Html} alt="html icon" />
               <p className="my-4">HTML</p>
             </div>
           </Fade>
           <Fade duration={800} delay={250} triggerOnce="true">
-            <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500 mt-2">
+            <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500 mt-2 py-4">
               <img className="w-24 mx-auto" src={Css} alt="Css icon" />
               <p className="my-4">CSS</p>
             </div>
           </Fade>
           <Fade duration={800} delay={400} triggerOnce="true">
-            <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500 mt-2">
+            <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500 mt-2 py-4">
               <img
                 className="w-24 mx-auto"
                 src={Javascript}
@@ -64,7 +64,7 @@ const Skills = () => {
             </div>
           </Fade>
           <Fade duration={800} delay={550} triggerOnce="true">
-            <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500 mt-2">
+            <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500 mt-2 py-4">
               <img
                 className="w-24 mx-auto"
                 src={Tailwind}
@@ -74,13 +74,13 @@ const Skills = () => {
             </div>
           </Fade>
           <Fade duration={800} delay={700} triggerOnce="true">
-            <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500 mt-2">
+            <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500 mt-2 py-4">
               <img className="w-24 mx-auto" src={ReactLogo} alt="React icon" />
               <p className="my-4">React</p>
             </div>
           </Fade>
           <Fade duration={800} delay={750} triggerOnce="true">
-            <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500 mt-2">
+            <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500 mt-2 py-4">
               <img className="w-24 mx-auto" src={Github} alt="Github icon" />
               <p className="my-4">Github</p>
             </div>

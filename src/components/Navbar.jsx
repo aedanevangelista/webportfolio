@@ -89,35 +89,35 @@ const Navbar = () => {
         }`}
       >
         <li className="py-6 text-4xl hover:text-sky-400 transition duration-200 ">
-          <Fade duration={800} direction="down">
+          <Fade duration={800} direction="left">
             <Link onClick={handleClick} to="home" smooth={true} duration={600}>
               HOME
             </Link>
           </Fade>
         </li>
         <li className="py-6 text-4xl hover:text-sky-400 transition duration-200">
-          <Fade duration={800} delay={150} direction="down">
+          <Fade duration={800} delay={150} direction="right">
             <Link onClick={handleClick} to="about" smooth={true} duration={600}>
               ABOUT
             </Link>
           </Fade>
         </li>
         <li className="py-6 text-4xl hover:text-sky-400 transition duration-200">
-          <Fade duration={800} delay={250} direction="down">
+          <Fade duration={800} delay={250} direction="left">
             <Link onClick={handleClick} to="skill" smooth={true} duration={600}>
               SKILL
             </Link>
           </Fade>
         </li>
         <li className="py-6 text-4xl hover:text-sky-400 transition duration-200">
-          <Fade duration={800} delay={350} direction="down">
+          <Fade duration={800} delay={350} direction="right">
             <Link onClick={handleClick} to="work" smooth={true} duration={600}>
               WORK
             </Link>
           </Fade>
         </li>
         <li className="py-6 text-4xl hover:text-sky-400 transition duration-200">
-          <Fade duration={800} delay={450} direction="down">
+          <Fade duration={800} delay={450} direction="left">
             <Link
               onClick={handleClick}
               to="contact"
@@ -133,48 +133,38 @@ const Navbar = () => {
       {/* Social Icons */}
       <div className="hidden xl:flex fixed flex-col top-[35%] left-0 text-white font-Inter font-semibold text-sm">
         <ul>
-          <li className="w-[160px] h-[60px] flex justify-between items-center transition-all ml-[-100px] hover:ml-[-0px] duration-500 bg-sky-600">
-            <a
-              href="https://www.linkedin.com/in/aedan-jarel-evangelista-7737911bb/"
-              target="_blank"
-              className="flex justify-between items-center w-full h-full visited:text-white"
-            >
-              LinkedIn <FaLinkedin size={30} />
-            </a>
-          </li>
-
-          <li className="w-[160px] h-[60px] flex justify-between items-center transition-all ml-[-100px] hover:ml-[-0px] duration-500 bg-gray-700">
-            <a
-              href="https://github.com/aedanevangelista"
-              className="flex justify-between items-center w-full"
-            >
-              Github <FaGithub size={30} />
-            </a>
-          </li>
-
-          <li className="w-[160px] h-[60px] flex justify-between items-center transition-all ml-[-100px] hover:ml-[-0px] duration-500 bg-blue-700">
-            <a
-              href="https://www.facebook.com/aedanevangelista/"
-              className="flex justify-between items-center w-full"
-            >
-              Facebook <FaFacebook size={30} />
-            </a>
-          </li>
-
-          <li className="w-[160px] h-[60px] flex justify-between items-center transition-all ml-[-100px] hover:ml-[-0px] duration-500 bg-gray-500">
-            <a href="" className="flex justify-between items-center w-full">
-              Resume <BsFillPersonLinesFill size={30} />
-            </a>
-          </li>
-
-          <li className="w-[165px] h-[60px] flex justify-between items-center transition-all ml-[-105px] hover:ml-[-0px] duration-500 bg-[#FE0B81]">
-            <a
-              href="https://www.frontendmentor.io/profile/aedanevangelista"
-              className="flex justify-between items-center w-full"
-            >
-              Frontend Mentor <img src={fem} alt="fem" className="w-8 h-auto" />
-            </a>
-          </li>
+          <Fade duration={800} delay={600} triggerOnce="true">
+            <li className="w-[160px] h-[60px] flex justify-between items-center transition-all ml-[-100px] hover:ml-[-0px] duration-500 bg-sky-600">
+              <a
+                href="https://www.linkedin.com/in/aedan-jarel-evangelista-7737911bb/"
+                target="_blank"
+                className="flex justify-between items-center w-full h-full visited:text-white"
+              >
+                LinkedIn <FaLinkedin size={30} />
+              </a>
+            </li>
+          </Fade>
+          <Fade duration={800} delay={750} triggerOnce="true">
+            <li className="w-[160px] h-[60px] flex justify-between items-center transition-all ml-[-100px] hover:ml-[-0px] duration-500 bg-gray-700">
+              <a
+                href="https://github.com/aedanevangelista"
+                className="flex justify-between items-center w-full"
+              >
+                Github <FaGithub size={30} />
+              </a>
+            </li>
+          </Fade>
+          <Fade duration={800} delay={900} triggerOnce="true">
+            <li className="w-[165px] h-[60px] flex justify-between items-center transition-all ml-[-105px] hover:ml-[-0px] duration-500 bg-[#FE0B81]">
+              <a
+                href="https://www.frontendmentor.io/profile/aedanevangelista"
+                className="flex justify-between items-center w-full"
+              >
+                Frontend Mentor{" "}
+                <img src={fem} alt="fem" className="w-8 h-auto" />
+              </a>
+            </li>
+          </Fade>
         </ul>
       </div>
     </div>
