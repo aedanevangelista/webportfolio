@@ -8,7 +8,7 @@ import Footer from "./components/Footer";
 
 function App() {
   return (
-    <div className="">
+    <div className="overflow-x-hidden">
       <Navbar className=" z-50" />
       <Home />
       <About className=" z-10" />

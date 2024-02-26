@@ -15,7 +15,7 @@ import monday from "../assets/monday.png";
 
 import { MdDeveloperMode } from "react-icons/md";
 import { SiMaterialdesignicons } from "react-icons/si";
-import { FaLightbulb } from "react-icons/fa";
+import { FaTools } from "react-icons/fa";
 import { Fade } from "react-awesome-reveal";
 
 const Skills = () => {
@@ -27,8 +27,8 @@ const Skills = () => {
       {/* Container */}
 
       <div className="max-w-[800px] mx-auto p-4 flex flex-col justify-center items-center w-full h-full font-bold ">
-        <div className="items-center flex flex-col" triggerOnce="true">
-          <Fade duration={300} direction="down">
+        <div className="items-center flex flex-col">
+          <Fade duration={300} direction="down" triggerOnce="true">
             <p className="text-4xl font-bold inline border-b-4 border-sky-400">
               Skill
             </p>
@@ -90,12 +90,17 @@ const Skills = () => {
         <div className="grid sm:grid-cols-2 sm:gap-32">
           <div>
             <p className="mt-8 text-2xl flex justify-center items-center mb-8">
-              <Fade duration={800} direction="down" triggerOnce="true">
+              <Fade
+                duration={800}
+                direction="down"
+                triggerOnce="true"
+                delay={400}
+              >
                 <SiMaterialdesignicons className="mx-2" size={25} />
                 <span>DESIGN</span>
               </Fade>
             </p>
-            <Fade duration={800} direction="up" triggerOnce="true">
+            <Fade duration={800} direction="up" triggerOnce="true" delay={400}>
               <div className="grid grid-cols-3 gap-4 items-center shadow-md shadow-[#040c16] p-4">
                 <img src={Figma} alt="figma img" className="w-16 h-auto" />
                 <img src={Ps} alt="figma img" className="w-16 h-auto" />
@@ -109,14 +114,14 @@ const Skills = () => {
               <Fade
                 duration={800}
                 direction="down"
-                delay={200}
+                delay={600}
                 triggerOnce="true"
               >
-                <FaLightbulb className="mx-2" size={30} />
-                <span>KNOWLEDGE</span>
+                <FaTools className="mx-2" size={30} />
+                <span>TOOLS</span>
               </Fade>
             </p>
-            <Fade duration={800} direction="up" delay={200} triggerOnce="true">
+            <Fade duration={800} direction="up" delay={600} triggerOnce="true">
               <div className="grid grid-cols-3 gap-4 items-center shadow-md shadow-[#040c16] p-4">
                 <img src={Rblx} alt="rblx" className="w-16 h-auto" />
                 <img src={VsC} alt="VsC" className="w-14 h-auto" />
