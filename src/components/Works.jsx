@@ -1,53 +1,64 @@
 import React from "react";
-import WorkImg from "../assets/projects/workImg.jpeg";
-import realEstate from "../assets/projects/realestate.jpg";
-import todolist from "../assets/projects/todolist.png";
+import ralphWeb from "../assets/projects/ralphWeb.png";
 
 const Works = () => {
+  const workData = [
+    {
+      imgSrc: ralphWeb,
+      webSrc: "https://kidfromlaloma.netlify.app/",
+      name: "Kid From Laloma Portfolio",
+      stacks: ["React", "Tailwind"],
+      desc: "A photographer website portfolio with a Gallery Section.",
+    },
+  ];
+
   return (
     <div
       name="work"
-      className="w-full md:h-screen bg-slate-900/[99%] text-gray-300 py-32 sm:px-0 sm:py-22"
+      className="w-full h-full bg-slate-900/[99%] text-gray-300 py-32 sm:px-0 sm:py-22"
     >
-      <div className="max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full">
+      <div className=" max-w-[1250px] mx-auto p-4 flex flex-col justify-center w-full h-full">
         <div className="mb-8 ">
           <p className="text-4xl text-white w-full font-bold inline border-b-4 border-sky-400">
             Work
           </p>
           <p className="my-6">// Check out some of my recent work</p>
         </div>
+        <div className="flex justify-center items-center ">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {workData.map((work, index) => (
+              <a href={work.webSrc} target="_blank">
+                <div
+                  key={index}
+                  className="max-w-sm h-[450px] rounded overflow-hidden shadow-lg group cursor-pointer opacity-85 hover:shadow-black/80 hover:opacity-100 transition-all duration-300"
+                >
+                  <img
+                    className="w-full max-h-[300px] "
+                    src={work.imgSrc}
+                    alt={work.name}
+                  />
+                  <div className="px-4 py-8">
+                    <div className="mb-4">
+                      <h1 className="flex items-center font-bold text-xl mb-4 text-white group-hover:text-sky-400 transition-all duration-300">
+                        {work.name}
+                      </h1>
 
-        <div className="grid sm:grid-cols-2 gap-4">
-          {/* Grid Item */}
-
-          <div className="shadow-lg shadow-[#040c16] container flex flex-col justify-center items-center mx-auto content-div overflow-hidden">
-            <img
-              src={todolist}
-              alt="todolist"
-              className="h-[350px] w-full object-cover transition-transform duration-300"
-            />
-
-            {/* Hover Effect */}
-            <div className="duration-300 transition-all my-4 bg-slate-900 py-2 w-full flex flex-col justify-center items-center z-10">
-              <div className="bg-slate-900/[99%]">
-                <span className="text-2xl font-bold text-white tracking-wider">
-                  React JS Application
-                </span>
-
-                <div className="pt-4 text-center ">
-                  <a href="https://aedanevangelista-todolist.netlify.app/">
-                    <button className="text-center rounded-sm px-4 py-2 m-2 border-sky-500 border-2 text-white font-bold text-lg hover:bg-sky-500 transition-all duration-400">
-                      DEMO
-                    </button>
-                  </a>
-                  <a href="https://github.com/aedanevangelista/TodoList">
-                    <button className="text-center rounded-sm px-4 py-2 m-2 border-sky-500 border-2 text-white font-bold text-lg hover:bg-sky-500 transition-all duration-400">
-                      CODE
-                    </button>
-                  </a>
+                      <p className="text-gray-400 text-sm">{work.desc}</p>
+                    </div>
+                    <div className="flex space-x-2">
+                      {work.stacks.map((stack, stackIndex) => (
+                        <p
+                          key={stackIndex}
+                          className="text-sky-300 font-semibold text-sm bg-sky-900 py-1 px-2 rounded-full"
+                        >
+                          {stack}
+                        </p>
+                      ))}
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </div>
+              </a>
+            ))}
           </div>
         </div>
       </div>
