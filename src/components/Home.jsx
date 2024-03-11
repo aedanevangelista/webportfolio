@@ -8,13 +8,15 @@ const Home = () => {
   return (
     <div name="home" className="w-full h-screen bg-slate-900">
       {/* Container */}
-      <div className="max-w-[1000px] md:max-w-[1200px] mx-auto px-8 flex flex-col md:flex-row justify-center items-center h-full">
+      <div className="max-w-[1000px] md:max-w-[1200px] mx-auto px-8 flex flex-col md:flex-row justify-center items-center h-full gap-10">
         <Fade direction="left" triggerOnce="true" delay={200}>
-          <img
-            src={avatar}
-            alt="avatar"
-            className="w-auto hidden lg:flex lg:h-[450px] md:mr-20"
-          />
+          <div className="hidden lg:flex bg-white px-3 pt-3 pb-20">
+            <img
+              src={avatar}
+              alt="avatar"
+              className="w-auto hidden lg:flex lg:h-[450px] md:mr-20 bg-slate-500 grayscale"
+            />
+          </div>
         </Fade>
         <div>
           <Fade direction="down" triggerOnce="true" delay={500}>
