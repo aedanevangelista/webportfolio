@@ -29,14 +29,14 @@ const Home = () => {
           </Fade>
           <Fade triggerOnce="true" delay={700}>
             <h2 className="text-2xl sm:text-3xl font-bold text-gray-300 my-2">
-              I'm a Full-stack developer.
+              I'm a Front-end developer.
             </h2>
           </Fade>
           <Fade direction="up" triggerOnce="true" delay={800}>
             <p className="text-md sm:text-1.5xl text-gray-400 py-2 max-w-[740px] font-light text-justify">
               I specialize in designing and building exceptional digital
               experiences. I used to be in Game Development for Roblox. But
-              currently, I'm more focused on building responsive full-stack web
+              currently, I'm more focused on building responsive front-end web
               applications.
             </p>
           </Fade>

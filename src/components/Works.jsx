@@ -1,5 +1,6 @@
 import React from "react";
 import ralphWeb from "../assets/projects/ralphWeb.png";
+import { FaCheckCircle } from "react-icons/fa";
 
 const Works = () => {
   const workData = [
@@ -9,6 +10,7 @@ const Works = () => {
       name: "Kid From Laloma Portfolio",
       stacks: ["React", "Tailwind"],
       desc: "A photographer website portfolio with a Gallery Section.",
+      date: "2024",
     },
   ];
 
@@ -45,15 +47,21 @@ const Works = () => {
 
                       <p className="text-gray-400 text-sm">{work.desc}</p>
                     </div>
-                    <div className="flex space-x-2">
-                      {work.stacks.map((stack, stackIndex) => (
-                        <p
-                          key={stackIndex}
-                          className="text-sky-300 font-semibold text-sm bg-sky-900 py-1 px-2 rounded-full"
-                        >
-                          {stack}
-                        </p>
-                      ))}
+                    <div className="flex justify-between mx-2">
+                      <div className="flex space-x-2">
+                        {work.stacks.map((stack, stackIndex) => (
+                          <p
+                            key={stackIndex}
+                            className="text-sky-300 font-semibold text-sm bg-sky-900 py-1 px-2 rounded-full"
+                          >
+                            {stack}
+                          </p>
+                        ))}
+                      </div>
+                      <div className="flex justify-center items-center gap-2 text-[#00b7c7]">
+                        <FaCheckCircle size={20} />
+                        <p className="font-bold ">{work.date}</p>
+                      </div>
                     </div>
                   </div>
                 </div>
