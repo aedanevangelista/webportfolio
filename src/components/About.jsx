@@ -146,11 +146,8 @@ const About = () => {
                     <h1 className={timelineH1}>TECHNICAL SUPPORT</h1>
                     <h2 className={timelineH2}>VXI Global Solutions, LLC</h2>
                     <p className={timelineP}>
-                      Life went downwards as I fell into depression. Managed to
-                      pick myself up again and tried to become a technical
-                      support for the meantime. Got to improve my english
-                      communication skills that I still use up to this date as a
-                      developer.
+                      Provided the best technical assistance between clients and
+                      were able to improve my communication skills.
                     </p>
                   </div>
                 </Fade>
@@ -174,11 +171,8 @@ const About = () => {
                     <h1 className={timelineH1}>TECHNICAL SUPPORT</h1>
                     <h2 className={timelineH2}>VXI Global Solutions, LLC</h2>
                     <p className={timelineP}>
-                      Life went downwards as I fell into depression. Managed to
-                      pick myself up again and tried to become a technical
-                      support for the meantime. Got to improve my english
-                      communication skills that I still use up to this date as a
-                      developer.
+                      Provided the best technical assistance between clients and
+                      were able to improve my communication skills.
                     </p>
                     <p className={timelineCardDate}>Oct 2022 - June 2023</p>
                   </div>
